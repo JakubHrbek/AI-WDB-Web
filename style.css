@@ -79,6 +79,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   padding-bottom: 5vh;
+  font-size: 20px;
 }
 .footerInstall {
   width: 50vw;
