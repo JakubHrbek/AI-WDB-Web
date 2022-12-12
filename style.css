@@ -1,0 +1,137 @@
+body {
+  font-family: 'Montserrat';
+  height: 100vh;
+  width: 100vw;
+  background-color: #D0D0D0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.imageStyling {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+}
+.navbarLogo {
+  display: flex;
+  justify-content: flex-start;
+  width: 50vw;
+  height: 10vh;
+  align-items: center;
+  margin-left: 5vw;
+  text-decoration: underline;
+  font-size: 50px;
+}
+.navbarItems {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+  width: 50vw;
+  height: 10vh;
+  align-items: center;
+}
+.navbarItem {
+}
+.contentBlock {
+  margin-top: 10vh;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+}
+.contentBlock2 {
+  margin-top: 20vh;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20vh;
+}
+.contentText {
+  margin-top: 10vh;
+  width: 40vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 50px;
+}
+.contentText2 {
+  width: 80vw;
+}
+.contentImage {
+  width: 40vw;
+  height: 70vh;
+  background-image: url("https://images.unsplash.com/photo-1505156868547-9b49f4df4e04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1016&q=80");
+}
+.footerBlock {
+  margin-top: 10vh;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 5vh;
+}
+.footerInstall {
+  width: 50vw;
+  height: 5vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.install2 {
+  width: 80vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.installAppleBig {
+  background-image: url("https://cdn.discordapp.com/attachments/979474409792360458/1051802134942851162/Screenshot_2022-12-12_at_11.05.58.png");
+  width: 20vw;
+  height: auto;
+}
+.installGoogleBig {
+  background-image: url("https://cdn.discordapp.com/attachments/979474409792360458/1051802135286775848/Screenshot_2022-12-12_at_11.06.06.png");
+  width: 20vw;
+  height: auto;
+}
+.footerArrows {
+  width: 50vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.installIconApple {
+  background-image: url("https://cdn.discordapp.com/attachments/979474409792360458/1051802134942851162/Screenshot_2022-12-12_at_11.05.58.png");
+  width: 10vw;
+  height: auto;
+}
+.installIconGoogle {
+  background-image: url("https://cdn.discordapp.com/attachments/979474409792360458/1051802135286775848/Screenshot_2022-12-12_at_11.06.06.png");
+  width: 10vw;
+  height: auto;
+}
+.footerText {
+  width: 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.contact {
+  color: #D0D0D0;
+  background-color: black;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
