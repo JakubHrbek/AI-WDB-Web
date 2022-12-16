@@ -17,6 +17,9 @@ body {
   width: 100vw;
   display: flex;
   justify-content: flex-start;
+  position: fixed;
+  background-color:#D0D0D0;
+  border-bottom: 4px solid black;
 }
 .navbarLogo {
   display: flex;
@@ -25,8 +28,8 @@ body {
   height: 10vh;
   align-items: center;
   margin-left: 5vw;
-  text-decoration: underline;
   font-size: 50px;
+  font-weight: bold;
 }
 .navbarItems {
   font-size: 25px;
@@ -60,6 +63,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   font-size: 50px;
 }
@@ -83,7 +87,7 @@ body {
 }
 .footerInstall {
   width: 50vw;
-  height: 5vh;
+  height: 10vh;
   display: flex;
   justify-content: space-evenly;
 }
@@ -112,12 +116,12 @@ body {
 }
 .installIconApple {
   background-image: url("https://cdn.discordapp.com/attachments/979474409792360458/1051802134942851162/Screenshot_2022-12-12_at_11.05.58.png");
-  width: 10vw;
+  width: 20vw;
   height: auto;
 }
 .installIconGoogle {
   background-image: url("https://cdn.discordapp.com/attachments/979474409792360458/1051802135286775848/Screenshot_2022-12-12_at_11.06.06.png");
-  width: 10vw;
+  width: 20vw;
   height: auto;
 }
 .footerText {
@@ -135,4 +139,18 @@ a {
   border-radius: 10px;
   padding-left: 5px;
   padding-right: 5px;
+}
+.contentText3 {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.underlinedtext {
+  border-bottom: 3px solid #000;
+  padding-bottom: 5px;
+}
+.underlinedtextLogo {
+  border-bottom: 7px solid #000;
+  padding-bottom: 5px;
 }
