@@ -189,3 +189,112 @@ footer .right {
   flex-direction: column;
   padding: 10px;
 }
+
+.navbar .nav-btn {
+  display: none;
+}
+
+.navbar #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .navbar > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+  }
+  .navbar > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+
+  .navbar > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .navbar > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+
+  .navbar .navbarLogo {
+    font-size: 100%;
+  }
+
+  .navbar .underlinedtextLogo {
+    border-bottom: 2px solid #000;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin: -5px;
+  }
+  .navbar > .navbarItems {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .navbar > .navbarItems > a {
+    display: block;
+    width: 100%;
+  }
+  .navbar > #nav-check:not(:checked) ~ .navbarItems {
+    height: 0px;
+  }
+  .navbar > #nav-check:checked ~ .navbarItems {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+  .contentBlock .contentText{
+    font-size: 100%;
+  }
+
+  .contentBlock2 .contentText{
+    font-size: 190%;
+  }
+
+  .footerBlock .footerInstall .installIconApple{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/300px-App_Store_%28iOS%29.svg.png");
+    width: 40%;
+    height: 160%;
+  }
+
+  .footerBlock .footerInstall .installIconGoogle{
+    background-image: url("https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Logo_Play_512px_clr_nGVTgYY.max-500x500.png");
+    width: 35%;
+    height: 160%;
+  }
+
+  .footerArrows i{
+    font-size: 100%;
+  }
+
+  .footerArrows .footerText a{
+    font-size: 50%;
+  }
+
+  footer .left img{
+    max-width: 90%;
+    height: auto;
+  }
+
+  footer .left span{
+   font-size: 50%;
+  }
+
+  footer .right span{
+    font-size: 50%;
+   }
+
+}
