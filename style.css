@@ -117,13 +117,16 @@ body {
 }
 .installIconApple {
   background-image: url("https://cdn.discordapp.com/attachments/979474409792360458/1051802134942851162/Screenshot_2022-12-12_at_11.05.58.png");
-  width: 20vw;
+  width: 15vw;
   height: auto;
+  border-radius: 3%;
+  
 }
 .installIconGoogle {
   background-image: url("https://cdn.discordapp.com/attachments/979474409792360458/1051802135286775848/Screenshot_2022-12-12_at_11.06.06.png");
-  width: 20vw;
+  width: 15vw;
   height: auto;
+  border-radius: 3%;
 }
 .footerText {
   width: 10vw;
@@ -198,29 +201,6 @@ footer .right {
 }
 
 @media (max-width:600px) {
-  .navbar > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-
-  }
-  .navbar > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-  }
-
-  .navbar > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .navbar > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-  }
 
   .navbar .navbarLogo {
     font-size: 100%;
@@ -233,15 +213,13 @@ footer .right {
     margin: -5px;
   }
   .navbar > .navbarItems {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-color: #333;
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
+    font-size: 85%;
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+    height: 10vh;
+    align-items: center;
+
   }
   .navbar > .navbarItems > a {
     display: block;
@@ -265,22 +243,23 @@ footer .right {
 
   .footerBlock .footerInstall .installIconApple{
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/300px-App_Store_%28iOS%29.svg.png");
-    width: 40%;
-    height: 160%;
+    width: 13vw;
+    height: auto;
   }
 
   .footerBlock .footerInstall .installIconGoogle{
     background-image: url("https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Logo_Play_512px_clr_nGVTgYY.max-500x500.png");
-    width: 35%;
-    height: 160%;
+    width: 13vw;
+    height: auto;
   }
 
-  .footerArrows i{
-    font-size: 100%;
-  }
-
-  .footerArrows .footerText a{
+  .footerArrows {
     font-size: 50%;
+  }
+
+  
+  .footerArrows i {
+    font-size: 200%;
   }
 
   footer .left img{
@@ -297,5 +276,17 @@ footer .right {
    }
 
   
+   .install2 .installIconApple{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/300px-App_Store_%28iOS%29.svg.png");
+    width: 13vw;
+    height: auto;
+  }
+
+  .install2 .installIconGoogle{
+    background-image: url("https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Logo_Play_512px_clr_nGVTgYY.max-500x500.png");
+    width: 13vw;
+    height: auto;
+  }
+
 
 }
