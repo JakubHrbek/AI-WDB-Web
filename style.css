@@ -164,13 +164,13 @@ a {
 }
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #D0D0D0;
   padding: 10px;
   font-family: 'Inter', sans-serif;
   border-top: 4px solid black;
-  height: 15vh;
+  min-height: 15vh;
 }
 
 footer img {
@@ -191,6 +191,7 @@ footer .right {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  margin-right: 10px;
 }
 
 .navbar .nav-btn {
