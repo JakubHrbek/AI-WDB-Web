@@ -59,6 +59,14 @@ body {
   justify-content: space-around;
   margin-bottom: 20vh;
 }
+.contentBlockONas {
+  margin-top: 20vh;
+  width: 100vw;
+  height: 250vh;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20vh;
+}
 .contentText {
   margin-top: 10vh;
   width: 40vw;
@@ -150,6 +158,10 @@ a {
   display: flex;
   justify-content: center;
   text-align: center;
+}
+.oNasDiv {
+  width: 70vw;
+  font-size: 45px;
 }
 .underlinedtext {
   border-bottom: 4px solid #000;
