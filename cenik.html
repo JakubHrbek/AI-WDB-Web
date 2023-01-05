@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://api-ssps.cajthaml.eu/file/global/css/reset_ld9mrCCm.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1eb946f3e5.js" crossorigin="anonymous"></script>
+    <title> AI Wardrobe</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <div class="navbarLogo"><a href="index.html">AI Wardrobe</a></div>
+      <div class="navbarItems">
+        <div class="navbarItem">
+          <a href="cenik.html" class="underlinedtext">Ceník</a>
+        </div>
+        <div class="navbarItem">
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+        <div class="navbarItem">
+          <a href="stahnout.html">Stáhnout</a>
+        </div>
+      </div>
+    </div>
+    <div class="contentBlockONas">
+      <div class="oNasDiv">
+        <br><br>
+        Představ si, že můžeš mít <span style="font-weight: bold;">okamžitě</span> a bez jakéhokoliv úsilí vymyšlený <span style="font-weight: bold;">perfektní outfit</span>.
+        <br><br><br>
+        Spočítej si, kolik peněz ti naše aplikace ušetří za rok.
+        <br><br>
+        <div class="calculatorBlock">
+          <form>
+            <label>Tvoje mzda za hodinu:</label> <br>
+            <input type="number" id="wage">
+            <button type="button" id="calculate-button">Calculate</button>
+          </form>
+          <br>
+          <div class="resultBlock">
+            <div id="result">Ušetříš: </div>
+          </div>
+          <script type="text/javascript" charset="utf-8">
+            const calculateButton = document.getElementById('calculate-button');
+          calculateButton.addEventListener('click', function() {
+            const wage = document.getElementById('wage').value;
+            const hours = 103;
+            const result = wage * hours;
+            document.getElementById('result').textContent = "Ušetříš: " + result + "Kč";
+          });
+          </script>
+        </div>
+        <br><br>
+        A kolik ti ušetří za celý tvůj život!
+        <br><br>
+        <div class="calculatorBlock">
+          <form id="calculator-2">
+            <label>Tvoje mzda za hodinu:</label> <br>
+            <input type="number" id="wage-2">
+            <button type="button" id="calculate-button-2">Calculate</button>
+          </form>
+          <br>
+          <div class="resultBlock">
+            <div id="result-2"></div>
+          </div>
+          <script type="text/javascript">
+            const calculateButton2 = document.getElementById('calculate-button-2');
+            calculateButton2.addEventListener('click', function() {
+              const wage = document.getElementById('wage-2').value;
+              const hours = 6888;
+              const result = wage * hours;
+              document.getElementById('result-2').textContent = "Ušetříš: " + result + "Kč";
+            });
+          </script>
+        </div>
+        <br><br>
+        Tak na co čekáš?
+        <br><br>
+        Stáhni si naší appku a získej zpátky přes 100 hodin tvého života ročně, zbav se práce s vybíráním oblečení a zvyš své sebevědomí!
+        <br><br>
+        A to okamžitě a bez jakéhokoliv úsilí.
+        <br><br><br><br>
+        Pokud se ti to pořád nějak nezdá, zkus premium verzi zdarma na 3 měsíce! <br><br>
+        <span style="font-weight: bold;">(Nabídka platí do 31.6.2024)</span> <br><br><br><br>
+        A pokud aplikace nesplní tvé požadavky, vrátíme ti bez otázek peníze. <br><br>
+      </div>
+    </div>
+    <div class="footerBlock">
+      <div class="footerInstall">
+        <div class="installIconApple imageStyling"></div>
+        <div class="installIconGoogle imageStyling"></div>
+      </div>
+      <div class="footerArrows">
+        <a href="index.html"><i class="fa-solid fa-chevron-left fa-4x"></i></a>
+            <div class="footerText">
+              <a href="index.html">Domů</a>
+            </div>
+              <a href="kontakt.html">Kontakt</a>
+        <a href="kontakt.html"><i class="fa-solid fa-chevron-right fa-4x"></i></a>
+      </div>
+    </div>
+    <footer>
+      <a href="principle-industries.com">
+        <div class="left">
+          <img src="https://cdn.discordapp.com/attachments/1035951026584424548/1053606536167047199/Principle_Industries_Logo_No_Background.png" alt="Principle Industries logo">
+          <span><span style="font-weight: 600;font-size: 25px;">Principle Industries</span> <br>Vytváříme webové stránky, které Vás oddělí od konkurence.</span>
+        </div>
+      </a>
+      <div class="right">
+        <a href="povinneUdaje.html">Povinné údaje</a>
+        <a href="https://discord.com/app">Discord</a>
+        <a href="https://instagram.com">Instagram</a>
+      </div>
+    </footer>
+  </body>
+</html>

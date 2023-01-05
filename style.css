@@ -303,3 +303,15 @@ footer .right {
   }
 
 }
+.calculatorBlock {
+  text-align: center;
+  justify-content: center;
+  background-color: black;
+  color: #D0D0D0;
+  border-radius: 20px;
+  padding: 10px;
+}
+.resultBlock {
+  display: flex;
+  justify-content: center;
+}
