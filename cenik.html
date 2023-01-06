@@ -10,23 +10,16 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="nav-btn">
-        <label for="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
-      <div class="navbarLogo"><a href="index.html">AI Wardrobe</a></div>
+      <div class="navbarLogo"><a href="index.html" class="underlinedtextLogo">AI Wardrobe </a></div>
       <div class="navbarItems">
         <div class="navbarItem">
-          <a href="cenik.html" class="underlinedtext">Ceník</a>
-        </div>
-        <div class="navbarItem">
-          <a href="kontakt.html">Kontakt</a>
+          <a href="oNas.html">O nás</a>
         </div>
         <div class="navbarItem">
           <a href="stahnout.html">Stáhnout</a>
+        </div>
+        <div class="navbarItem underlinedtext">
+          <a href="cenik.html">Ceník</a>
         </div>
       </div>
     </div>
@@ -35,25 +28,27 @@
         <br><br>
         Představ si, že můžeš mít <span style="font-weight: bold;">okamžitě</span> a bez jakéhokoliv úsilí vymyšlený <span style="font-weight: bold;">perfektní outfit</span>.
         <br><br><br>
-        Spočítej si, kolik peněz ti naše aplikace ušetří za rok.
+        Spočítej si, kolik peněz ti naše aplikace ušetří za rok. <br><br>(Většina žen tráví 17 minut denně vybíráním oblečení, proto je to výchozí čas)
         <br><br>
         <div class="calculatorBlock">
           <form>
-            <label>Tvoje mzda za hodinu:</label> <br>
-            <input type="number" id="wage">
-            <button type="button" id="calculate-button">Calculate</button>
+            <label>Tvoje mzda za hodinu:</label><br>
+            <input type="number" id="wage1"><br><br>
+            <label>Počet minut strávených vybíráním oblečení denně:</label> <br>
+            <input type="number" id="time-spent1" value="17">
+            <button type="button" id="calculate-button1">Calculate</button>
           </form>
           <br>
-          <div class="resultBlock">
-            <div id="result">Ušetříš: </div>
-          </div>
-          <script type="text/javascript" charset="utf-8">
-            const calculateButton = document.getElementById('calculate-button');
-          calculateButton.addEventListener('click', function() {
-            const wage = document.getElementById('wage').value;
-            const hours = 103;
-            const result = wage * hours;
-            document.getElementById('result').textContent = "Ušetříš: " + result + "Kč";
+          <div id="result1"></div>
+          <script type="text/javascript">
+          const calculateButton1 = document.getElementById('calculate-button1');
+          calculateButton1.addEventListener('click', function() {
+            const wage1 = document.getElementById('wage1').value;
+            const timeSpent1 = document.getElementById('time-spent1').value;
+            const hours1 = timeSpent1 / 60; // Calculate the number of hours spent picking clothes
+            const result1 = wage1 * hours1 * 31; // Calculate the amount of money wasted
+            const roundedResult1 = result1.toFixed(2);
+            document.getElementById('result1').textContent = "Za měsíc ztrácíš: " +  roundedResult1 + "Kč";
           });
           </script>
         </div>
@@ -61,23 +56,25 @@
         A kolik ti ušetří za celý tvůj život!
         <br><br>
         <div class="calculatorBlock">
-          <form id="calculator-2">
-            <label>Tvoje mzda za hodinu:</label> <br>
-            <input type="number" id="wage-2">
-            <button type="button" id="calculate-button-2">Calculate</button>
+          <form>
+            <label>Tvoje mzda za hodinu:</label><br>
+            <input type="number" id="wage"><br><br>
+            <label>Počet minut strávených vybíráním oblečení denně:</label> <br>
+            <input type="number" id="time-spent" value="17">
+            <button type="button" id="calculate-button">Calculate</button>
           </form>
           <br>
-          <div class="resultBlock">
-            <div id="result-2"></div>
-          </div>
-          <script type="text/javascript">
-            const calculateButton2 = document.getElementById('calculate-button-2');
-            calculateButton2.addEventListener('click', function() {
-              const wage = document.getElementById('wage-2').value;
-              const hours = 6888;
-              const result = wage * hours;
-              document.getElementById('result-2').textContent = "Ušetříš: " + result + "Kč";
-            });
+          <div id="result"></div>
+          <script type="text/javascript" charset="utf-8">
+            const calculateButton = document.getElementById('calculate-button');
+          calculateButton.addEventListener('click', function() {
+            const wage = document.getElementById('wage').value;
+            const timeSpent = document.getElementById('time-spent').value;
+            const hours = timeSpent / 60; // Calculate the number of hours spent picking clothes
+            const result = wage * hours * 21900; // Calculate the amount of money wasted
+            const roundedResult2 = result.toFixed(2);
+            document.getElementById('result').textContent = "Za tvůj život ztratíš: " + roundedResult2 + "Kč";
+          });
           </script>
         </div>
         <br><br>
@@ -87,23 +84,25 @@
         <br><br>
         A to okamžitě a bez jakéhokoliv úsilí.
         <br><br><br><br>
-        Pokud se ti to pořád nějak nezdá, zkus premium verzi zdarma na 3 měsíce! <br><br>
+        Pokud se ti to pořád nechce vyzkoušet, zkus premium verzi zdarma na 3 měsíce! <br><br>
         <span style="font-weight: bold;">(Nabídka platí do 31.6.2024)</span> <br><br><br><br>
         A pokud aplikace nesplní tvé požadavky, vrátíme ti bez otázek peníze. <br><br>
       </div>
     </div>
     <div class="footerBlock">
       <div class="footerInstall">
-        <div class="installIconApple imageStyling"></div>
-        <div class="installIconGoogle imageStyling"></div>
+        <div class="installIconApple imageStyling" onclick="location.href='https://apps.apple.com/cz/story/idXXXXXXXXXXXXXXXXXXXXXX';" style="cursor:pointer;"></div>
+        <div class="installIconGoogle imageStyling" onclick="location.href='https://play.google.com/store/apps/details?id=XXXXXXXXXXXXXXXXXXXXXX';" style="cursor:pointer;"></div>
       </div>
       <div class="footerArrows">
-        <a href="index.html"><i class="fa-solid fa-chevron-left fa-4x"></i></a>
+        <a href="stahnout.html"><i class="fa-solid fa-chevron-left fa-4x"></i></a>
+            <div class="footerText">
+              <a href="stahnout.html">Stáhnout</a>
+            </div>
             <div class="footerText">
               <a href="index.html">Domů</a>
             </div>
-              <a href="kontakt.html">Kontakt</a>
-        <a href="kontakt.html"><i class="fa-solid fa-chevron-right fa-4x"></i></a>
+        <a href="oNas.html"><i class="fa-solid fa-chevron-right fa-4x"></i></a>
       </div>
     </div>
     <footer>
