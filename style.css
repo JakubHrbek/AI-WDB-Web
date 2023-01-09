@@ -41,6 +41,10 @@ body {
   align-items: center;
 }
 .navbarItem {
+  border-bottom: 0px solid black;
+  padding: 0px;
+  margin: 0px;
+  transition: 0.1s;
 }
 
 .contentBlock {
@@ -145,6 +149,7 @@ body {
 a {
   text-decoration: none;
   color: black;
+  transition: 0.15s;
 }
 .contact {
   color: #D0D0D0;
@@ -325,4 +330,10 @@ footer .right {
 .downloadSize {
   width: 408px;
   height: 120px;
+}
+.navbarItem:hover {
+  border-bottom: 4px solid #000;
+  padding: 10px;
+  margin: -10px;
+  transition: 0.4s;
 }
