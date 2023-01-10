@@ -65,7 +65,7 @@ body {
 .contentBlockONas {
   margin-top: 20vh;
   width: 100vw;
-  height: 140vh;
+  height: 270vh;
   display: flex;
   justify-content: space-around;
   margin-bottom: 20vh;
@@ -336,4 +336,8 @@ footer .right {
   padding: 10px;
   margin: -10px;
   transition: 0.4s;
+}
+.cenikHeader {
+  text-align: center;
+  padding: 50px;
 }

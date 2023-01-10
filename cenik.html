@@ -25,8 +25,13 @@
     </div>
     <div class="contentBlockONas">
       <div class="oNasDiv">
-        <br><br>
-        Představ si, že můžeš mít <span style="font-weight: bold;">okamžitě</span> a bez jakéhokoliv úsilí vymyšlený <span style="font-weight: bold;">perfektní outfit</span>.
+        <br><br><br>
+        <div class="cenikHeader">
+          Představ si, že můžeš mít <span style="font-weight: bold;">okamžitě</span> vymyšlený <span style="font-weight: bold;">perfektní outfit</span>.
+          <br><br><br>
+          Stačí si jen stáhnout naši aplikaci.
+        </div>
+        <br><br><br>
         <br><br><br>
         Spočítej si, kolik peněz ti naše aplikace ušetří za rok. <br><br>(Většina žen tráví 17 minut denně vybíráním oblečení, proto je to výchozí čas)
         <br><br>
@@ -47,8 +52,8 @@
             const timeSpent1 = document.getElementById('time-spent1').value;
             const hours1 = timeSpent1 / 60; // Calculate the number of hours spent picking clothes
             const result1 = wage1 * hours1 * 31; // Calculate the amount of money wasted
-            const roundedResult1 = result1.toFixed(2);
-            document.getElementById('result1').textContent = "Za měsíc ztrácíš: " +  roundedResult1 + "Kč";
+            const formattedResult1 = new Intl.NumberFormat('cs-CZ', { style: 'currency', currency: 'CZK' }).format(result1);
+            document.getElementById('result1').textContent = "Za měsíc ztrácíš: " + formattedResult1;
           });
           </script>
         </div>
@@ -66,14 +71,14 @@
           <br>
           <div id="result"></div>
           <script type="text/javascript" charset="utf-8">
-            const calculateButton = document.getElementById('calculate-button');
+          const calculateButton = document.getElementById('calculate-button');
           calculateButton.addEventListener('click', function() {
-            const wage = document.getElementById('wage').value;
-            const timeSpent = document.getElementById('time-spent').value;
-            const hours = timeSpent / 60; // Calculate the number of hours spent picking clothes
-            const result = wage * hours * 21900; // Calculate the amount of money wasted
-            const roundedResult2 = result.toFixed(2);
-            document.getElementById('result').textContent = "Za tvůj život ztratíš: " + roundedResult2 + "Kč";
+          const wage = document.getElementById('wage').value;
+          const timeSpent = document.getElementById('time-spent').value;
+          const hours = timeSpent / 60; // Calculate the number of hours spent picking clothes
+          const result = wage * hours * 21900; // Calculate the amount of money wasted
+          const formattedResult = new Intl.NumberFormat('cs-CZ', { style: 'currency', currency: 'CZK' }).format(result);
+          document.getElementById('result').textContent = "Za tvůj život ztratíš: " + formattedResult;
           });
           </script>
         </div>
@@ -81,12 +86,9 @@
         Tak na co čekáš?
         <br><br>
         Stáhni si naší appku a získej zpátky přes 100 hodin tvého života ročně, zbav se práce s vybíráním oblečení a zvyš své sebevědomí!
-        <br><br>
-        A to okamžitě a bez jakéhokoliv úsilí.
         <br><br><br><br>
         Pokud se ti to pořád nechce vyzkoušet, zkus premium verzi zdarma na 3 měsíce! <br><br>
-        <span style="font-weight: bold;">(Nabídka platí do 31.6.2024)</span> <br><br><br><br>
-        A pokud aplikace nesplní tvé požadavky, vrátíme ti bez otázek peníze. <br><br>
+        <span style="font-weight: bold;">(Nabídka platí do 31.6.2024)</span>
       </div>
     </div>
     <div class="footerBlock">
