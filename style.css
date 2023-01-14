@@ -105,12 +105,6 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-.install2 {
-  width: 80vw;
-  height: 10vh;
-  display: flex;
-  justify-content: space-evenly;
-}
 .installAppleBig {
   background-image: url("https://cdn.discordapp.com/attachments/979474409792360458/1051802134942851162/Screenshot_2022-12-12_at_11.05.58.png");
   width: 20vw;
@@ -219,6 +213,40 @@ footer .right {
   display: none;
 }
 
+.calculatorBlock {
+  text-align: center;
+  justify-content: center;
+  background-color: black;
+  color: #D0D0D0;
+  border-radius: 20px;
+  padding: 10px;
+}
+.resultBlock {
+  display: flex;
+  justify-content: center;
+}
+.downloadSize {
+  width: 408px;
+  height: 120px;
+}
+.navbarItem:hover {
+  border-bottom: 4px solid #000;
+  padding: 10px;
+  margin: -10px;
+  transition: 0.4s;
+}
+.cenikHeader {
+  text-align: center;
+  padding: 50px;
+}
+.downloadFlex {
+  display: flex;
+  justify-content: space-between;
+}
+.piText {
+  font-size: 25px;
+  font-weight: 600;
+}
 @media (max-width:600px) {
 
   .navbar .navbarLogo {
@@ -253,7 +281,7 @@ footer .right {
   }
 
   .contentBlock .contentText{
-    font-size: 100%;
+    font-size: 180%;
   }
 
   .contentBlock2 .contentText{
@@ -265,7 +293,7 @@ footer .right {
   }
 
   footer .left img{
-    max-width: 90%;
+    width: 25%;
     height: auto;
   }
 
@@ -276,19 +304,6 @@ footer .right {
   footer .right span{
     font-size: 50%;
    }
-
-
-   .install2 .installIconApple{
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/300px-App_Store_%28iOS%29.svg.png");
-    width: 13vw;
-    height: auto;
-  }
-
-  .install2 .installIconGoogle{
-    background-image: url("https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Logo_Play_512px_clr_nGVTgYY.max-500x500.png");
-    width: 13vw;
-    height: auto;
-  }
   .footerInstall {
     width: 101vw;
     height: 10vh;
@@ -314,30 +329,37 @@ footer .right {
     margin-bottom: 2vh;
     margin-top: 2vh;
   }
+  .downloadFlex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .downloadSize {
+    width: 272px;
+    height: 80px;
+  }
+  .contentBlockONas {
+    margin-top: 0px;
+    height: 4030px;
+  }
+  .oNasDiv {
+    width: 80vw;
+  }
+  .specialText {
+    font-size: 150% !important;
+  }
+  .navbar {
+    height: 7vh;
+  }
+  .indexNavbar {
+    height: 6vh !important;
+  }
 }
-.calculatorBlock {
-  text-align: center;
-  justify-content: center;
-  background-color: black;
-  color: #D0D0D0;
-  border-radius: 20px;
-  padding: 10px;
-}
-.resultBlock {
-  display: flex;
-  justify-content: center;
-}
-.downloadSize {
-  width: 408px;
-  height: 120px;
-}
-.navbarItem:hover {
-  border-bottom: 4px solid #000;
-  padding: 10px;
-  margin: -10px;
-  transition: 0.4s;
-}
-.cenikHeader {
-  text-align: center;
-  padding: 50px;
+@media (max-width: 380px) {
+  .footerBlock {
+    height: 14vh;
+  }
+  .navbar {
+    height: 8vh;
+  }
 }
