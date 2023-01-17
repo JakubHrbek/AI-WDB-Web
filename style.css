@@ -445,6 +445,12 @@ footer .right {
     justify-content: center;
     flex-direction: column;
   }
+  .downloadFlex2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media (max-width: 380px) {
   .footerBlock {
@@ -456,6 +462,9 @@ footer .right {
 }
 @media (min-width: 600px) {
   .mobile-break {
+    display: none;
+  }
+  .downloadFlex2 {
     display: none;
   }
 }
