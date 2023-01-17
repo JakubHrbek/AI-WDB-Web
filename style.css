@@ -250,13 +250,19 @@ footer .right {
 .contentBlock2ONas {
   margin-top: 20vh;
   width: 100vw;
-  height: 30vh;
+  height: 50vh;
   display: flex;
   justify-content: space-around;
   /* margin-bottom: 20vh;*/
 }
 .contactBlock {
   margin-bottom: 20vh;
+}
+.AK {
+  font-weight: bold;
+}
+.boldText {
+  font-weight: bold;
 }
 @media (max-width:600px) {
 
@@ -375,6 +381,19 @@ footer .right {
   .underlinedtextLogo {
     padding-bottom: 10px;
     padding-top: 20px;
+  }
+  .AK {
+    font-size: 25px;
+  }
+  .oNasDiv {
+    font-size: 25px;
+  }
+  .cenikHeader {
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 @media (max-width: 380px) {
